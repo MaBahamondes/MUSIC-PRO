@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+nav a:hover,
+nav a.active {
+	text-decoration: underline;
+}
+
+main {
+	padding: 20px;
+}
+
+/* Estilos para las tarjetas de producto */
+.productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.card img {
+	max-width: 100%;
+	max-height: 200px;
+	margin-bottom: 10px;
+}
+
+.card h2 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.card p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+.card button {
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: #398a3d;
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+	.card {
+		width: 100%;
+	}
+}
